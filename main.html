@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>MAIN</title>
+		<link rel="stylesheet" type="text/css" href="Css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+	
+		</div>
+		<div id="main">
+			<div id="menu">
+				<div id="menu_du_menu">
+					<a href="fanarts.html" style="text-decoration:none"><div class="item_menu">fanarts</div></a>
+					<a href="screenshots.html" style="text-decoration:none"><div class="item_menu">screenshots</div></a>
+					<a href="warframes.html" style="text-decoration:none"><div class="item_menu">warframes</div></a>
+					<a href="historia.html" style="text-decoration:none"><div class="item_menu">historia</div></a>
+					<a href="main.html" style="text-decoration:none"><div class="item_menu">Home</div></a>
+				</div>		
+			</div>
+			<div id="possivelJava">
+				<div class="w3-content w3-display-container" style="max-width:1100px">
+				  <img class="mySlides" src="imagens/news/1.jpg" style="width:100%">
+				  <img class="mySlides" src="imagens/news/2.jpg" style="width:100%">
+				  <img class="mySlides" src="imagens/news/3.jpg" style="width:100%">
+				  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+					<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+					<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+					<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+					<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+					<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+				  </div>
+				</div>
+
+				<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function currentDiv(n) {
+				  showDivs(slideIndex = n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("demo");
+				  if (n > x.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					 dots[i].className = dots[i].className.replace(" w3-white", "");
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " w3-white";
+				}
+				</script>
+			</div>
+			<div id="new_Player">
+				
+				<div  id="social">
+					
+					<a href="https://forums.warframe.com/topic/795965-octavia%E2%80%99s-anthem-hotfix-2046/" style="text-decoration:none"><div id="pc">Pc</div></a>
+					<a href="https://forums.warframe.com/topic/797230-ps4-octavias-anthem-2045-hotfixes/" style="text-decoration:none"><div id="ps4">Ps4</div></a>
+					<a href="https://forums.warframe.com/topic/797229-xb1-octavias-anthem-2045-hotfixes/" style="text-decoration:none"><div id="xbox">Xbox</div></a>
+					
+				</div>
+				
+				<div id="texto"><br><br><br><br><br><br><div id="texto_nome">Lotus</div> Voce nao está sozinho tenno</div>
+				
+			
+			</div>
+			<div id="menu_plataformas">
+				<div id="menu_du_menu_plataformas">
+					<div class="item_menu_plataformas">PC</div>
+					<div class="item_menu_plataformas">PS4</div>
+					<div class="item_menu_plataformas">Xbox</div>
+					
+				</div>
+			</div>
+			<div id="content">
+				<div id="content_top">
+					<div id="left_imagen_destaque_news">
+					</div>
+ 					<div id="right_text_destaque_news">
+						<div class="titulo">#Capture o momento</div>
+						<div class="texto">Demos-lhe o poder, e agora é sua vez de nos mostrar o que você pode criar! Você aproveitará o efeito avermelhado, esbranquiçado ou queimado? Manterá romântico em preto & branco? O mundo de captura com o Estúdio no Warframe tem muito a oferecer, aproveite e ganhe platinas!
+						Como entrar?
+						Capture seu melhor momento de estúdio do Warframe e compartilhe-o no tópico do fórum oficial para julgamento.
+						OU
+						Tweet sua imagem de estúdio capturada no Twitter com a hashtag #CapturaTheMoment para entrar no concurso. Serão considerados somente os registros postados após 28 de abril, às 13:00h (EST). Os participantes devem seguir o Twitter @PlayWarframe.
+						Precisa de um exemplo?
+						</div>
+							<div id="exemplo"></div>
+					</div>
+				</div>
+				<div id="content_bottom">
+					<div id="left_text_destaque_news">
+						<div class="texto">
+						É hora de atualizar o seu arsenal com 17 novos itens TennoGen criados pela comunidade. Os criadores não apenas conseguem ver suas idéias ganharem vida, mas também recebem uma parte das vendas de seus itens na loja do Warframe.
+						Também incluído nesta rodada do TennoGen uma nova funcionalidade que lhe permite colorir a sua Syandana independente do resto dos accesórios do seu Warframe!
+						</div>
+					</div>
+					<div id="right_imagen_destaque_news">
+					</div>
+				</div>
+				<div id="imagem_giant"></div>
+				<div id="texto_giant"><div class="titulo">Ambulas Reborn</div><div class="texto"> O líder do Perrin Sequence, Ergo Glast, interceptou uma comunicação perturbadora. Os gananciosos Corpus estão tentando aumentar seus exércitos a níveis perigosos e incontroláveis. O presidente dos Corpus, Frohd Bek, está convidando os investidores a testemunhar os mais novos e mortíferos Protótipos de Ambulas em uma prova no campo de batalha. As Ambulas são equipadas com um processador de ponta chamado Animo, que aprende e cresce a partir de cada encontro.
+
+Trabalhe com Ergo Glast e os colegas Tenno para interromper o projeto de Frohd e a implantação de Ambulas antes que eles vejam o uso difundido. As novas naves de desembarque contendo os Protótipos de Ambulas foram avistadas em planetas Corpus. Derrote-os e faça os investidores pensarem duas vezes!</div></div>
+				
+			</div>
+			
+		</div>
+		
+		<div id="rodape"></div>
+		 
+		
+
+	</body>
+</html>

@@ -1,0 +1,2177 @@
+/*___*/
+
+	/*
+																		  ,
+																		  B
+																		 BMB.
+																	   3BBBMBX
+																	.PMBMBMBMBBD,
+																  7MBMBMBMBMBMBMBMs
+															   :EBMBMBMBMx iMBMBMBMBO:
+															 7BMBMBBBMBJ     vBBBBBMBMBs
+														   xMBMBBBMBH,    .    .UBMBMBMBBF
+											  .          .BMBBBMBX:      :Br      .FBMBMBBB:
+											  LR;,.:rUOBMBMBMBM;       ;MBMBBr       :OBMBMBBBRSr:.,:EU
+											   MBMBMBBBMBMBMM.      :0BMBBEMBMBD:       WMBBBMBMBMBMBM
+											   HMB.::.  BBMc     .HBMBMBK   FBBBMBZ,     ;BBB  .::.BBM
+											   MBM      UMP    .BMBMBZ:       ,HBMBMB:    LBM      MBM
+											   BBB   BMBMBr   cBMBW:     0BM     .0BMBF   .BMBMB   BMB:
+											  WBBx   cBL.iB   BMR     cMBM1MBM3     PMB   M7,;BK   ;BMB
+											  MBM    BM:  .J  BB    RBMB;   :RMBM    RM  c:   MB    MBM
+											 :BM7    BB     , ,M   MBr         ;BM   Or .     BM:   :MBi
+											 :MB,   7B7        .i  B             B  ::        :BS    BM
+											  BMG    BK             :           .,            cM:   2MB
+											   BMH   .Mi     : :                 E:          :M:   sMB
+												;MRui  ;:.   :Fui:;  :;;7i   .;;;rS:,  rr   ,:  :7EO:
+													 ::::::,   .UUi:77;::37s7Lv7;  ,;3SD,....:;;,
+												  BM: ..:i7rJLxS:  .      rs: 7   ..;LxxUWRFU;::7OW
+												   S2r:::iis0r;J3Or.:rvLi:::rBL.  .:;,  .   :ri:.,
+																 .ZL. .:L;,r7;i7r;7:
+																		 xMc     ,
+																		:. 3v
+																		:S  ;
+																		 LB;
+																		  7
+
+																	INACABADO
+																		  
+																		  
+																		  */
+
+/*nota CHECAR OS MULTILPOS HOVER*/
+/*caixa onde ta tudão*/
+body{
+	background-image:url(../imagens/back-lotus.jpg);
+	
+	background-position:center;
+	background-attachment:fixed;
+	background-size:cover;
+}
+#main{
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height:2000px;
+	/*background-color:#00BFFF;*/
+}
+/*cabecalho*/
+#header{
+	width:100%;
+	height:400px;
+	background-color: rgba(000,000,000,0.6);
+	background-image:url(../imagens/logo12.PNG);
+	background-repeat:no-repeat;
+	background-position:center ;
+	
+}
+/*menu*/
+#menu{
+	width:1100px;
+	height:100px;
+	
+	
+	
+}
+#menu_du_menu{
+	width:800px;
+	height:50px;
+	background-color: rgba(000,000,000,0.6);
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.item_menu{
+	width:150px;
+	height:35px;
+	background-color: rgba(000,000,000,0.6);
+	float:right;
+	
+	font-family:verdana;
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	margin-right:10px;
+	
+	transition:1s;
+}
+.item_menu:hover {
+	/*background-color:#000fff;*/
+	color:cyan;
+	box-shadow:5px 10px 30px cyan;
+	transition:1s;
+}
+/*possivel java*/
+#drop{
+	width:1100px;
+	height:350px;
+	background-color:#ffffff;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	
+	
+}
+#possivelJava{
+	width:1100px;
+	height:300px;
+	/*background-color:#f00000;*/
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	/*background-image:url(../imagens/novo-tennogen.jpg);*/
+	background-size:100%;
+}
+/* menu de plataformas*/
+#menu_du_menu_plataformas{
+	width:1000px;
+	height:50px;
+	background-color: rgba(000,000,000,0.6);
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top: 10px;		
+}
+#menu_plataformas{
+	width:1000px;
+	height:30px;
+	/*background-color: rgba(000,000,000,0.6);*/
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+}
+.item_menu_plataformas{
+	width:100px;
+	height:30px;
+	background-color: rgba(000,000,000,0.6);
+	float:left;
+	font-family:verdana;
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	margin-right:10px;
+	margin-top:20px;
+	transition:1s;
+
+}
+.item_menu_plataformas:hover{
+	background-color:#000fff;
+	margin-top:0px;
+	transition:1s;
+}
+/*conteudo*/
+#content{
+	width:1100px;
+	height:1400px;
+	background-color: rgba(000,000,000,0.6);
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+/*conteudo de cima imagem a esquerda texto a direita*/
+#content_top{
+	width:1000px;
+	height:300px;
+	/*background-color:#ffffff;*/
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	margin-top:0px;
+	
+}
+#left_imagen_destaque_news{
+	width:520px;
+	height:320px;
+	background-color: rgba(000,000,000,0.6);
+	margin-left:0px;
+	margin-right:10px;
+	margin-bottom:0px;
+	margin-top:0px;
+	float:left;
+	background-image:url(../imagens/captureOmomento.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	/*box-shadow:-10px 10px 70px cyan;*/
+	
+	
+}
+#right_text_destaque_news{
+	width:500px;
+	height:300px;
+	/*background-color:#c00000;*/
+	/*nao foi possivel aplicar float right*/
+	margin-left:500px;
+	/*perguntar porque*/
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	
+	
+	
+	
+	
+	
+}
+.texto{
+	color:white;
+	font-size:16;
+	text-align:justify;
+	
+}
+.titulo{
+	color:orange;
+	font-size:24;
+	
+}
+#exemplo{
+	
+	width:40px;
+	height:40px;
+	transition:2s;
+	background-image:url(../imagens/capturatwitterexample.jpg);
+	
+	margin-top:auto;
+	margin-left:30px;
+	margin-right:auto;
+	margin-bottom:auto;
+	background-size:100%;
+	display:block;
+	opacity:0.9;
+	
+}
+#exemplo:hover{
+	width:670;
+	height:466px;
+	transition:2s;
+	background-image:url(../imagens/capturatwitterexample.jpg);
+	background-size:100%;
+	background-position:center;
+	
+	display:block;
+	opacity:0.9;
+	
+}
+/*conteudo de baixo imagem a direita  texto a esquerda*/
+#content_bottom{
+	width:1000px;
+	height:300px;
+	background-color:#000000;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-top:0px;
+	
+}
+
+
+#left_text_destaque_news{
+	width:500px;
+	height:300px;
+	background-color:#c00000;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	float:left;
+}
+#right_imagen_destaque_news{
+	width:500px;
+	height:300px;
+	background-color:#f00000;
+	margin-left:500px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	background-image:url(../imagens/novo-tennogen.jpg);
+	background-size:100%;
+	background-repeat:no-repeat; 	
+	background-position:center;
+}
+/*caixa contendo ajuda a novos jogadores*/
+#new_Player{
+	width:250px;
+	height:250px;
+	background-color:rgba(105,105,105,0.9);
+	float:left;	
+	/*position:fixed;*/
+	margin-left:-250px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:-500px;
+	transition:2s;
+	
+	/*fonte*/
+	color:#ffffff;
+	font-size:16;
+	font-family:verdana;
+	position:fixed;
+	text-align:bottom;
+	/*imagen*/
+	
+	background-position:center top; 
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+#texto{
+	width:220px;
+	height:200px;
+	background-image:url(../imagens/lotus.jpg);
+	background-position:center top; 
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	margin-top:auto;
+}
+#texto_nome{
+	color:orange;
+	font-size:16;
+	font-family:verdana;
+	
+	
+	
+}
+#social{
+	
+	width:0px;
+	height:0px;
+	background-color:#000fff;
+	
+	
+	
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:18px;
+	margin-left:150px;
+	/*fonte*/
+	color:#ffffff;
+	font-size:18;
+	font-family:verdana;
+	/*display:none;*/
+	/*opacity:0;*/
+	transition-duration:1s;
+}
+#new_player:hover>#social div{
+	width:150px;
+	height:40px;
+	transition:2s;
+	margin-left:75px;
+	margin-right:0px;
+	margin-bottom:0px;
+	
+	margin-left:100px;
+	opacity:0.9;
+	
+	display:block;
+	
+	
+	
+}
+#new_player:hover{
+	margin-left:-170px;
+	transition:2s;
+	color:cyan;
+	box-shadow:5px 10px 30px cyan;
+}
+
+#pc{
+	width:0px;
+	height:0px;
+	background-color:rgba(204,0,204,0.6);
+	color:#ffffff;
+	
+	margin-right:0px;
+	margin-bottom:0px;
+	opacity:0;
+	margin-left:100px;
+	box-shadow:5px 10px 30px 204,0,204;
+}
+#ps4{
+	width:0px;
+	height:0px;
+	background-color:rgba(0,0,204,0.6);
+	color:#ffffff;
+	margin-right:0px;
+	margin-bottom:0px;
+	opacity:0;
+	margin-left:100px;
+	
+	}
+#xbox{
+	width:0px;
+	height:0px;
+	background-color:rgba(0,204,0,0.6);
+	color:#ffffff;
+	margin-right:0px;
+	margin-bottom:0px;
+	opacity:0;
+	margin-left:100px;
+	
+}
+#pc:hover{
+	width:0px;
+	height:0px;
+	background-color:rgba(204,0,204,0.6);
+	color:#ffffff;
+	box-shadow:15px 0px 30px #FF1493;
+	margin-right:0px;
+	margin-bottom:0px;
+	
+	margin-left:100px;
+}
+#ps4:hover{
+	width:0px;
+	height:0px;
+	background-color:rgba(0,0,204,0.6);
+	color:#ffffff;
+	margin-right:0px;
+	margin-bottom:0px;
+	box-shadow:5px 0px 50px #00BFFF;
+	margin-left:100px;
+	}
+#xbox:hover{
+	width:0px;
+	height:0px;
+	background-color:rgba(0,204,0,0.6);
+	color:#ffffff;
+	margin-right:0px;
+	margin-bottom:0px;
+	
+	margin-left:100px;
+	box-shadow:5px 0px 50px #00FF00;
+}
+/*imagem destaque*/
+#imagem_giant{
+	width:1000px;
+	height:300px;
+	background-color:#f00000;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../imagens/ambulas.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+
+}
+/*ultimo texto*/
+#texto_giant{
+	width:1000px;
+	height:300px;
+	background-color:#c00000;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#rodape{
+	width:100%;
+	height:100px;
+	background-color:#000000;
+
+}
+
+/*formatação da historia*/
+#mainHistoria{
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height:5000px;
+	
+}
+#contentHistoria{
+	width:1100px;
+	height:4250px;
+	background-color: rgba(000,0,000,0.6);
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	
+	
+}
+.historia{
+	width:1000px;
+	height:4200px;
+	
+	background-color:rgba(0,0,0,0.6);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	
+	
+}
+.imagem_giant{
+	width:750px;
+	height:750px;
+	background-color:#f00000;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../imagens/warframe___ghost_of_the_orokin_by_yuikami_da-d7vi3mq.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+
+.subtitulo{
+	color:orange;
+	font-size:15;
+	
+}
+/*personagem*/
+#mainPersonagem{
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height:2500px;
+	
+}
+#contentPersonagem{
+	width:1100px;
+	height:1900px;
+	background-color: rgba(000,000,000,0.6);
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+
+}
+
+#personagem{
+	width:900px;
+	height:1900px;
+	background-color: rgba(000,000,000,0);
+	margin-left:0px;
+	margin-right:auto;
+	
+}
+
+.personagem{
+	width:200px;
+	height:200px;
+	background-color:rgba(255,000,000,0);
+	float:left;
+	
+	font-family:verdana;
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	margin-right:100px;
+	
+	transition:1s;
+	
+	
+}
+.fila_personagem{
+	width:1240px;
+	height:220px;
+	
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.personagem:hover{
+	width:300px;
+	height:450px;
+	background-color: rgba(000,000,000,0.9);
+	
+	float:left;
+	
+	font-family:verdana;
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	margin-right:10px;
+	
+	transition:1s;
+	
+	
+}
+
+.especificacoes{
+	color:#808080;
+	font-size:15;
+	font-family:verdana;
+	opacity:1;
+	background-color:rgba(0,0,0,0);
+	width:300px;
+	height:50px;
+	margin-top:0px;
+}
+
+#ash:hover>.menu_skills .skills,#atlas:hover>.menu_skills .skills,#banshee:hover>.menu_skills .skills,#chroma:hover>.menu_skills .skills,
+#ember:hover>.menu_skills .skills, #ember:hover>.menu_skills .skills,#equinox:hover>.menu_skills .skills,#excalibur:hover>.menu_skills .skills,
+#frost:hover>.menu_skills .skills,#hydroid:hover>.menu_skills .skills,#inaros:hover>.menu_skills .skills,#ivara:hover>.menu_skills .skills,#limbo:hover>.menu_skills .skills,
+#loki:hover>.menu_skills .skills,#mag:hover>.menu_skills .skills,#mesa:hover>.menu_skills .skills,#mirage:hover>.menu_skills .skills,
+#nekros:hover>.menu_skills .skills,#nezha:hover>.menu_skills .skills,#nidus:hover>.menu_skills .skills,#nova:hover>.menu_skills .skills,
+#nyx:hover>.menu_skills .skills,#oberon:hover>.menu_skills .skills,#octavia:hover>.menu_skills .skills,#rhino:hover>.menu_skills .skills,
+#saryn:hover>.menu_skills .skills,#titania:hover>.menu_skills .skills,#trinity:hover>.menu_skills .skills,#valkyr:hover>.menu_skills .skills,
+#vauban:hover>.menu_skills .skills,#volt:hover>.menu_skills .skills,#wukong:hover>.menu_skills .skills,#zephyr:hover>.menu_skills .skills{
+	width:50px;
+	height:50px;
+	background-color: rgba(255,255,255,0.9);
+	float:left;
+	margin-top:260px;
+	margin-right:10px;
+	opacity:1;
+	transition:1s;
+	margin-bottom:0px;
+}
+.video{
+	width:100px;
+	height:50px;
+	background-color: rgba(255,255,255,0.9);
+	
+	margin-left:auto;
+	margin-right:auto;
+	color:#000000;
+}
+.menu_skills{
+	width:240px;
+	height:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: rgba(0,255,255,0.9);
+	transition:1s;
+	
+}
+.skills{
+	width:0px;
+	height:0px;
+	opacity:1;
+	transition:1s;
+	margin-right:0px;
+}
+.skills:hover{
+	width:50px;
+	height:100px;
+	transition:1s;
+	background-color:rgba(0,255,255,0);
+	opacity:0.9;
+	transition:1s;
+}
+.texto_das_skills{
+	color:black;
+	font-size:15;
+	font-family:verdana;
+	opacity:0;
+	width:0px;
+	height:0px;
+}
+#ash1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ash/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:rgba(0, 255, 255,0.4);
+	
+}
+#ash2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ash/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:rgba(0, 255, 255,0.4);
+}
+#ash3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ash/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:rgba(0, 255, 255,0.4);
+}
+#ash4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ash/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:rgba(0, 255, 255,0.6);
+}
+#atlas1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/atlas/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#atlas2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/atlas/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#atlas3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/atlas/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#atlas4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/atlas/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#banshee1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/banshee/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#banshee2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/banshee/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#banshee3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/banshee/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#banshee4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/banshee/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#chroma1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/chroma/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#chroma2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/chroma/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#chroma3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/chroma/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#chroma4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/chroma/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ember1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ember/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ember2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ember/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ember3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ember/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ember4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ember/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#equinox1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/equinox/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#equinox2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/equinox/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#equinox3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/equinox/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#equinox4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/equinox/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#excalibur1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/excalibur/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#excalibur2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/excalibur/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#excalibur3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/excalibur/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#excalibur4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/excalibur/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#frost1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/frost/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#frost2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/frost/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#frost3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/frost/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#frost4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/frost/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#hydroid1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/hydroid/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#hydroid2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/hydroid/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#hydroid3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/hydroid/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#hydroid4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/hydroid/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#inaros1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/inaros/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#inaros2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/inaros/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#inaros3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/inaros/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#inaros4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/inaros/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ivara1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ivara/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ivara2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ivara/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ivara3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ivara/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#ivara4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/ivara/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#limbo1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/limbo/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#limbo2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/limbo/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#limbo3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/limbo/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#limbo4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/limbo/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#loki1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/loki/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#loki2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/loki/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#loki3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/loki/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#loki4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/loki/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mag1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mag/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mag2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mag/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mag3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mag/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mag4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mag/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mesa1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mesa/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mesa2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mesa/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mesa3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mesa/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mesa4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mesa/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mirage1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mirage/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mirage2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mirage/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mirage3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mirage/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#mirage4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/mirage/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nekros1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nekros/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nekros2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nekros/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nekros3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nekros/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nekros4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nekros/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nezha1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nezha/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nezha2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nezha/2.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nezha3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nezha/3.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nezha4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nezha/4.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nidus1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nidus/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nidus2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nidus/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nidus3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nidus/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nidus4{
+		width:50px;
+	height:50px;
+	background-image:url(../imagens/nidus/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nova1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nova/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nova2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nova/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nova3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nova/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nova4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nova/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nyx1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nyx/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nyx2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nyx/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nyx3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nyx/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#nyx4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/nyx/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#oberon1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/oberon/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#oberon2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/oberon/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#oberon3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/oberon/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#oberon4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/oberon/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#octavia1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/octavia/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#octavia2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/octavia/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#octavia3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/octavia/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#octavia4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/octavia/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#rhino1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/rhino/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#rhino2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/rhino/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#rhino3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/rhino/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#rhino4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/rhino/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#saryn1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/saryn/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#saryn2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/saryn/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#saryn3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/saryn/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#saryn4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/saryn/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#titania1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/titania/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#titania2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/titania/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#titania3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/titania/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#titania4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/titania/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#trinity1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/trinity/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#trinity2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/trinity/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#trinity3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/trinity/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#trinity4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/trinity/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#valkyr1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/valkyr/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#valkyr2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/valkyr/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#valkyr3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/valkyr/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#valkyr4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/valkyr/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#vauban1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/vauban/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#vauban2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/vauban/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#vauban3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/vauban/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#vauban4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/vauban/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#volt1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/volt/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#volt2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/volt/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#volt3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/volt/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#volt4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/volt/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#wukong1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/wukong/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#wukong2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/wukong/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#wukong3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/wukong/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#wukong4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/wukong/4.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#zephyr1{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/zephyr/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+}
+#zephyr2{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/zephyr/2.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+	transition:1s;
+}
+#zephyr3{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/zephyr/3.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+	transition:1s;
+}
+#zephyr4{
+	width:50px;
+	height:50px;
+	background-image:url(../imagens/zephyr/4.png);
+	background-size:100%;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:cyan;
+	transition:1s;
+} 
+/*CHECAR VIRGULA*/
+#ash1:hover,#ash2:hover,#ash3:hover,#ash4:hover,#atlas1:hover,#atlas2:hover,#atlas3:hover,#atlas4:hover,#banshee1:hover,#banshee2:hover,
+#banshee3:hover,#banshee4:hover,#chroma1:hover,#chroma2:hover,#chroma3:hover,#chroma4:hover,#ember1:hover,#ember2:hover,#ember3:hover,
+#ember4:hover,#atlas1:hover,#equinox2:hover,#equinox3:hover,#equinox4:hover,#excalibur1:hover,#excalibur2:hover,#excalibur3:hover,
+#excalibur4:hover,#frost1:hover,#frost2:hover,#frost3:hover,#frost4:hover,#hydroid1:hover,#hydroid2:hover,#hydroid3:hover,#hydroid4:hover,
+#inaros1:hover,#inaros2:hover,#inaros3:hover,#inaros4:hover,#ivara1:hover,#ivara2:hover,#ivara3:hover,#ivara4:hover,#limbo1:hover,#limbo2:hover,
+#limbo3:hover,#limbo4:hover,#loki1:hover,#loki2:hover,#loki3:hover,#loki4:hover,#mag1:hover,#mag2:hover,#mag3:hover,#mag4:hover,#mesa1:hover,
+#mesa2:hover,#mesa3:hover,#mesa4:hover,#mirage1:hover,#mirage2:hover,#mirage3:hover,#mirage4:hover,#nekros1:hover,#nekros2:hover,#nekros3:hover,
+#nekros4:hover,#nezha1:hover,#nezha2:hover,#nezha3:hover,#nezha4:hover,#nidus1:hover,#nidus2:hover,#nidus3:hover,#nidus4:hover,#nova1:hover,
+#nova2:hover,#nova3:hover,#nova4:hover,#nyx1:hover,#nyx2:hover,#nyx3:hover,#nyx4:hover,#oberon1:hover,#oberon2:hover,#oberon3:hover,#oberon4:hover,
+#octavia1:hover,#octavia2:hover,#octavia3:hover,#octavia4:hover,#rhino1:hover,#rhino2:hover,#rhino3:hover,#rhino4:hover,#saryn1:hover,#saryn2:hover,
+#saryn3:hover,#saryn4:hover,#titania1:hover,#titania2:hover,#titania3:hover,#titania4:hover,#trinity1:hover,#trinity2:hover,#trinity3:hover,
+#trinity4:hover,#valkyr1:hover,#valkyr2:hover,#valkyr3:hover,#valkyr4:hover,#vauban1:hover,#vauban2:hover,#vauban3:hover,#vauban4:hover,
+#volt1:hover,#volt2:hover,#volt3:hover,#volt4:hover,#wukong1:hover,#wukong2:hover,#wukong3:hover,#wukong4:hover,#zephyr1:hover,#zephyr2:hover,
+#zephyr3:hover,#zephyr4:hover{
+	width:200px;
+	height:300px;
+	opacity:1;
+	margin-left:-200px;
+	background-color:rgba(255,255,255,0.3);
+	transition:1s;
+}
+
+.texto_das_skills:hover{
+	width:200px;
+	height:200px;
+	opacity:1;
+	margin-top:100px;
+	color:cyan;
+	transition:2s;
+}
+.texto_dos_personagens{
+	color:white;
+	font-size:15;
+	font-family:verdana;
+	opacity:0;
+	background-color:rgba(255,0,0,0);
+	width:300px;
+	height:300px;
+	transition:2s;
+	margin-top:0px;
+	
+	
+	
+}
+.texto_dos_personagens:hover{
+	color:white;
+	font-size:15;
+	font-family:verdana;
+	opacity:1;
+	transition:2s;
+	width:300px;
+	height:300px;
+	margin-bottom:0px; 
+	background-color:rgba(255,000,000,0);
+	
+}
+.nome{
+	color:red;
+	font-size:20;
+	font-family:verdana;
+	background-color:rgba(255,255,255,0);
+	margin-left:60%;
+	opacity:0;
+	transition:2s;
+	
+}
+#ash:hover>.nome,#atlas:hover>.nome,#banshee:hover>.nome, #chroma:hover>.nome, #ember:hover>.nome, #ember:hover>.nome, #equinox:hover>.nome,
+#excalibur:hover>.nome,#frost:hover>.nome,#hydroid:hover>.nome,#inaros:hover>.nome,#ivara:hover>.nome,#limbo:hover>.nome,#loki:hover>.nome,
+#mag:hover>.nome,#mesa:hover>.nome,#mirage:hover>.nome,#nekros:hover>.nome,#nezha:hover>.nome,#nidus:hover>.nome,#nova:hover>.nome,
+#nyx:hover>.nome,#oberon:hover>.nome,#octavia:hover>.nome,#rhino:hover>.nome,#saryn:hover>.nome,#titania:hover>.nome,#frost:hover>.nome,
+#trinity:hover>.nome,#valkyr:hover>.nome,#vauban:hover>.nome,#volt:hover>.nome,#wukong:hover>.nome,#zephyr:hover>.nome{
+	opacity:1;
+	transition:2s;
+}
+
+#ash:hover,#atlas:hover,#banshee:hover, #chroma:hover, #ember:hover, #ember:hover, #equinox:hover,#excalibur:hover,#frost:hover,#hydroid:hover,
+#inaros:hover,#ivara:hover,#limbo:hover,#loki:hover,#mag:hover,#mesa:hover,#mirage:hover,#nekros:hover,#nezha:hover,#nidus:hover,#nova:hover,
+#nyx:hover,#oberon:hover,#octavia:hover,#rhino:hover,#saryn:hover,#titania:hover,#frost:hover,#trinity:hover,#valkyr:hover,#vauban:hover,
+#volt:hover,#wukong:hover,#zephyr:hover{
+	width:300px;
+	height:550px;
+	box-shadow:5px 0px 50px cyan;
+	transition:1s;
+	background-color:#000000;
+}
+
+
+#ash{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/ash/5cff27f151beb0403ef8bb5eff1d15f5.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#atlas{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/atlas/4fa9a26d12842b5ff06395f497e8d4b1.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#banshee{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/banshee/c2ed015b79bae9cdc28be008451006b8.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#chroma{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/chroma/63ddd0c75617c115b972d6d31306a931.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#ember{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/ember/9ecb861abd5fc94aec1df7268993e621.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#ember{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/ember/9ecb861abd5fc94aec1df7268993e621.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#equinox{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/equinox/24d5ef7ffd1da5179f9790943d816297.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#excalibur{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/excalibur/43729bc6577ddde9d80e9b4bb8fb5f8e.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#frost{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/frost/7280dd6f4e6afa0be340f720b98744b4.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#hydroid{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/hydroid/391820d96e3fda030473d06ef1d9d77c.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+#inaros{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/inaros/ce15c1e49cdbec23b2de47daa745dc70.png);
+	background-repeat:no-repeat;
+	transition:1s;
+	
+}
+
+#ivara{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/ivara/e4e2e6a331e8412fa501ccfb2cb6b28b.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#limbo{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/limbo/548246211aede1a0f8f489c27e95c692.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#loki{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/loki/156e978c7b436a1ab226c01cc7bcde7d.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#mag{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/mag/c89227e5d6d523c3db4e3850750ace68.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#mesa{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/mesa/6969cb4548ec2504984efbe254c026af.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#mirage{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/mirage/0a89cddee503d7227d198a6c8d60932e.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#nekros{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/nekros/f763e8bf8966cb710e2b5a1388b7d9bb.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+
+#nezha{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/nezha/ab10127b630804456cdae3b9043b0b41.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#nidus{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/nidus/eb4b4d360922b7dff0a677fbfe9c419e.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#nova{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/nova/54a302c3eaf6cfa47c59765a615b6526.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#nyx{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/nyx/4a659f14a8b2dbef3f7c3de4588f83ad.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#oberon{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/oberon/1957708a74d0ce4a8ec782e94f1c4753.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#octavia{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/octavia/10f8ad36ad85942505c69fcbe93f7bb0.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#rhino{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/rhino/3f81a067c72c2cec2392d27ea617edd3.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#saryn{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/saryn/f69a40d458dff024645b9022d14ee90e.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#titania{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/titania/f9a022569132efc82476641f245101d6.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#trinity{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/trinity/9e6ad40adf5964d461c769c606286a1a.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#valkyr{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/valkyr/f6eacac62dbb9042d5bee1d635c9473b.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#vauban{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/vauban/1d63f97d5ac74ab16ba111c411871101.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#volt{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/volt/b3fe4ab71d21f660179d774868b44c02.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#wukong{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/wukong/e0eab499674174b4ee3a9cdd36311073.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#zephyr{
+	width:200px;
+	height:200px;
+	background-image:url(../imagens/zephyr/9eb496690b1e3f36f61ab92b86e908b3.png);
+	background-repeat:no-repeat;
+	transition:1s;
+
+}
+#fanart{
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height:4500px;
+	
+	
+	
+}
+
+#contentFanart{
+	width:1100px;
+	height:4250px;
+	background-color: rgba(000,000,000,0.6);
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	
+	
+}
+#gallery{
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	height:4000px;
+	background-color: rgba(255,000,000,0);
+}
+
+
+
+
+
+
